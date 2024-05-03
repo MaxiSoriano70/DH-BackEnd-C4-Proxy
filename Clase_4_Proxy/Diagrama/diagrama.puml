@@ -1,0 +1,23 @@
+@startuml
+class Usuario{
+    - id : String
+    - tipoUsuario : ETipo
+}
+
+interface IServicioSpotify{
+    + descargarCancion(Usuario),String
+}
+
+class ProxyDescarga{
+    + descargarCancion(Usuario),String
+}
+
+class Descarga{
+    + descargarCancion(Usuario),String
+}
+
+ProxyDescarga -u-|>IServicioSpotify
+Descarga -u-|>IServicioSpotify
+Descarga <-l- ProxyDescarga
+IServicioSpotify <.l. Usuario
+@enduml
