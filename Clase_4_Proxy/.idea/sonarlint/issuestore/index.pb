@@ -15,3 +15,6 @@ O
 src/proxy/service/Descarga.java,f\b\fbb30d5dca52daedeed98bcc9bf9d05d0773f3b4
 \
 ,Test/proxy/service/IServicioSpotifyTest.java,5\f\5f18e7abf7b753228986f0656b6dde7c82218a91
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

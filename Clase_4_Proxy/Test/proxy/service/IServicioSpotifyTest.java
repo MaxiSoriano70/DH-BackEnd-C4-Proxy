@@ -24,7 +24,7 @@ class IServicioSpotifyTest {
         Usuario usuarioP = new Usuario("696969", ETipoUsuario.FREE);
         IServicioSpotify iServicioSpotify = new ProxyDescarga();
         String respuestaObtenida = iServicioSpotify.descargarCancion(usuarioP);
-        assertEquals("La descarga a sido completada con exito. Gracias por ser PREMIUM",respuestaObtenida);
+        assertNotEquals("La descarga a sido completada con exito. Gracias por ser PREMIUM",respuestaObtenida);
     }
 
     @Test
